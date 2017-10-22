@@ -50,3 +50,25 @@ npm install pm2 -g
 pm2 start server.js --name "chat"
 ```
 
+## 安装nginx
+```
+apt-get install nginx
+```
+
+## 配置nginx
+```
+chat.zhufengpeixun.cn
+```
+在
+/etc/nginx/sites-enabled
+目录下面创建一个文件，里面的内容
+```
+server {
+        listen 80;
+        server_name chat.zhufengpeixun.cn;
+
+        location / {
+           proxy_pass http://127.0.0.1:8080;
+        }
+}
+```
