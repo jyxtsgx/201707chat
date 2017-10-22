@@ -39,3 +39,14 @@ npm install
 node server.js
 ```
 访问 http://47.104.11.188
+
+## 安装进程管理器pm2
+```
+npm install pm2 -g
+```
+
+## 启动服务器
+```
+pm2 start server.js --name "chat"
+```
+
