@@ -25,3 +25,17 @@ npm install n -g
 ```
 n 7.5
 ```
+
+## 安装git
+```
+apt-get install git
+```
+
+## 安装代码
+```
+git clone https://github.com/zhufengnodejs/201707chat.git
+cd 201707chat
+npm install
+node server.js
+```
+访问 http://47.104.11.188
